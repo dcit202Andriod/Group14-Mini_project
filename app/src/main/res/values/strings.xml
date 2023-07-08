@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">clinics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CLINICS</string>
+    <string name="nav_header_subtitle">dynmamicinnovators32@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_service">Service</string>
+    <string name="menu_appointment">Appointment</string>
+    <string name="menu_doctors">Doctors</string>
+    <string name="menu_contact">Contact</string>
+
+</resources>

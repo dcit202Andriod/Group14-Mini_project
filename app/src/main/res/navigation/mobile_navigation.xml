@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.clinics.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_service"
+        android:name="com.example.clinics.ui.service.ServiceFragment"
+        android:label="@string/menu_service"
+        tools:layout="@layout/fragment_service" />
+
+    <fragment
+        android:id="@+id/nav_appointment"
+        android:name="com.example.clinics.ui.appointment.AppointmentFragment"
+        android:label="@string/menu_appointment"
+        tools:layout="@layout/fragment_appointment" />
+
+    <fragment
+        android:id="@+id/nav_doctors"
+        android:name="com.example.clinics.ui.doctors.DoctorsFragment"
+        android:label="@string/menu_doctors"
+        tools:layout="@layout/fragment_doctors" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.clinics.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+</navigation>
