@@ -12,5 +12,6 @@
     <string name="menu_appointment">Appointment</string>
     <string name="menu_doctors">Doctors</string>
     <string name="menu_contact">Contact</string>
+    <string name="services">Services</string>
 
 </resources>
