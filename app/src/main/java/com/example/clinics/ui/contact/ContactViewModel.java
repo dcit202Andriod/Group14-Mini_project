@@ -9,9 +9,9 @@ public class ContactViewModel extends ViewModel {
     private final String contactEmail;
 
     public ContactViewModel() {
-        contactName = "John Doe";
+        contactName = "Hospital Name";
         contactPhone = "+1234567890";
-        contactEmail = "john.doe@example.com";
+        contactEmail = "hospital@example.com";
     }
 
     public String getContactName() {
