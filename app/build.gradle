@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.clinics'
-    compileSdk 34
+    compileSdk  34
 
     defaultConfig {
         applicationId "com.example.clinics"
@@ -45,6 +45,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     configurations.implementation {
-        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+        exclude group:'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
     }
 }
