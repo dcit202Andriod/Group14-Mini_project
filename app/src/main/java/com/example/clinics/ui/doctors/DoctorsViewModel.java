@@ -4,20 +4,28 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DoctorsViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    private final MutableLiveData<List<Doctor>> doctors;
 
     public DoctorsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is service fragment");
+        doctors = new MutableLiveData<>();
+        doctors.setValue(getDoctorsList());
     }
 
-    public DoctorsViewModel(MutableLiveData<String> mText) {
-        this.mText = mText;
+    public LiveData<List<Doctor>> getDoctors() {
+        return doctors;
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    private List<Doctor> getDoctorsList() {
+        List<Doctor> doctorsList = new ArrayList<>();
+        doctorsList.add(new Doctor("Dr. John Doe", "Cardiology"));
+        doctorsList.add(new Doctor("Dr. Jane Smith", "Dermatology"));
+        doctorsList.add(new Doctor("Dr. Alex Johnson", "Orthopedics"));
+        return doctorsList;
     }
 }
+
