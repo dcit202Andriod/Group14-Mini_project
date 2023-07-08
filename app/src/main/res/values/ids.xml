@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="btn_appointment" type="id" />
+    <item name="welcomeQuoteTextView" type="id" />
+    <item name="healthQuoteTextView" type="id" />
 </resources>
