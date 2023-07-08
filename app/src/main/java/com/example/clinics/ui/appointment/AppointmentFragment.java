@@ -4,34 +4,51 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.clinics.databinding.FragmentAppointmentBinding;
+import com.example.clinics.R;
 
 public class AppointmentFragment extends Fragment {
 
-    private FragmentAppointmentBinding binding;
+    private EditText doctorNameEditText;
+    private EditText timeEditText;
+    private EditText dayEditText;
+    private EditText emailEditText;
+    private AppointmentViewModel appointmentViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        AppointmentViewModel appointmentViewModel =
-                new ViewModelProvider(this).get(AppointmentViewModel.class);
-
-        binding = FragmentAppointmentBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.textSlideshow;
-        appointmentViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        appointmentViewModel = new ViewModelProvider(this).get(AppointmentViewModel.class);
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_appointment, container, false);
+
+        // Initialize the UI components
+        doctorNameEditText = view.findViewById(R.id.doctorNameEditText);
+        timeEditText = view.findViewById(R.id.timeEditText);
+        dayEditText = view.findViewById(R.id.dayEditText);
+        emailEditText = view.findViewById(R.id.emailEditText);
+        Button submitButton = view.findViewById(R.id.submitButton);
+
+        submitButton.setOnClickListener(v -> {
+            // Retrieve the input values
+            String doctorName = doctorNameEditText.getText().toString();
+            String time = timeEditText.getText().toString();
+            String day = dayEditText.getText().toString();
+            String email = emailEditText.getText().toString();
+
+            // Pass the data to the ViewModel
+            appointmentViewModel.submitAppointment(doctorName, time, day, email);
+        });
+
+        return view;
     }
 }
