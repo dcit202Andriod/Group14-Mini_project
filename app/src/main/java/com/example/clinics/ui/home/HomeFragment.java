@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,14 +20,12 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         TextView welcomeText = root.findViewById(R.id.text_home);
-        Button appointmentButton = root.findViewById(R.id.btn_appointment);
 
         homeViewModel.getWelcomeMessage().observe(getViewLifecycleOwner(), welcomeText::setText);
 
 
-        appointmentButton.setOnClickListener(v -> {
-            // Perform some action, e.g., open appointment screen
-        });
+
+
 
         return root;
     }
