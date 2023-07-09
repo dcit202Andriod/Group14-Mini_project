@@ -18,7 +18,7 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 
 ## Team Roles
 ````
-Surnames              -            Role
+Usernames              -            Role
 
 ````
 ### Team
