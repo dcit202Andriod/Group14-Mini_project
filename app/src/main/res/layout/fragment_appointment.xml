@@ -85,6 +85,25 @@
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <TextView
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
