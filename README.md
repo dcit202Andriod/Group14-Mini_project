@@ -9,4 +9,3 @@
 8. Odofe Samuella Frimpong - 10972364
 9. Adu-Ameyaw Randy - 10973161
 10. Samuel Osei Boakye junior - 10953117
- 
