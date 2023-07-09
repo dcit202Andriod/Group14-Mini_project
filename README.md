@@ -39,6 +39,6 @@ vintageparasite        |
 5. StanleyHinson - 10954877
 6. vintageparasite -10972448
 7. Martin-Amoah - 10980029
-8. Odofe Samuella Frimpong - 10972364
-9. Adu-Ameyaw Randy - 10973161
-10. Samuel Osei Boakye junior - 10953117
+8. sfodofe - 10972364
+9. Ameyyaw - 10973161
+10. Kveonn - 10953117
