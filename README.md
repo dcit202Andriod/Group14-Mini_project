@@ -10,7 +10,6 @@ The app will send reminders to the user about their upcoming appointments, ensur
 In addition to appointment booking, Clinics also offers an emergency contact feature. Users can quickly access a list of nearby hospitals and emergency medical services. 
 In case of a medical emergency, users can tap on the hospital's contact information to initiate a call or send an instant message to request immediate medical assistance.
 
-
 The Clinics app prioritizes user experience and aims to simplify the process of seeking medical care.
 It provides a user-friendly interface, allowing users to navigate effortlessly through the various features and functionalities.
 The app also incorporates intuitive search and filtering options, making it easier for users to find healthcare providers based on their specific requirements, such as location, specialty, or availability.
