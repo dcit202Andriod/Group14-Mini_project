@@ -19,13 +19,17 @@ public class HomeFragment extends Fragment {
         HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        TextView welcomeText = root.findViewById(R.id.text_home);
+        TextView greetingText = root.findViewById(R.id.text_greeting);
+        TextView aboutText = root.findViewById(R.id.text_about);
+        TextView achievementText = root.findViewById(R.id.text_achievement);
+        TextView goalText = root.findViewById(R.id.text_goal);
+        TextView testimoniesText = root.findViewById(R.id.text_testimonies);
 
-        homeViewModel.getWelcomeMessage().observe(getViewLifecycleOwner(), welcomeText::setText);
-
-
-
-
+        homeViewModel.getGreetingMessage().observe(getViewLifecycleOwner(), greetingText::setText);
+        homeViewModel.getAboutMessage().observe(getViewLifecycleOwner(), aboutText::setText);
+        homeViewModel.getAchievementMessage().observe(getViewLifecycleOwner(), achievementText::setText);
+        homeViewModel.getGoalMessage().observe(getViewLifecycleOwner(), goalText::setText);
+        homeViewModel.getTestimoniesMessage().observe(getViewLifecycleOwner(), testimoniesText::setText);
 
         return root;
     }
