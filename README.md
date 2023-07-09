@@ -6,7 +6,7 @@ list of available healthcare providers, including clinics, hospitals, and specia
 
 They can view detailed profiles of each healthcare provider, such as their specialties, qualifications, and patient reviews.
 Once the user selects a healthcare provider, they can check the provider's availability and book an appointment for a specific date and time that suits their needs.
-The app will send reminders to the user about their upcoming appointments, ensuring they don't miss any important healthcare visits.
+
 In addition to appointment booking, Clinics also offers an emergency contact feature. Users can quickly access a list of nearby hospitals and emergency medical services. 
 In case of a medical emergency, users can tap on the hospital's contact information to initiate a call or send an instant message to request immediate medical assistance.
 
