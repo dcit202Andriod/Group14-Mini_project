@@ -1,18 +1,17 @@
 package com.example.clinics.ui.contact;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class ContactViewModel extends ViewModel {
 
-    private static MutableLiveData<String> mText = null;
+    private String phoneNumber = "0554989558";
+    private String emailAddress = "dynamicinnovators32@gmail.com";
 
-    public ContactViewModel(MutableLiveData<String> mText) {
-        ContactViewModel.mText = mText;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public static LiveData<String> getText() {
-        return mText;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 }

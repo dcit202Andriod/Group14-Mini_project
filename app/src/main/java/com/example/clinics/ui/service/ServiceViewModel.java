@@ -16,4 +16,23 @@ public class ServiceViewModel extends ViewModel {
     public LiveData<String> getText() {
         return mText;
     }
+
+    // Additional hospital services
+    public LiveData<String> getEmergencyService() {
+        MutableLiveData<String> emergencyService = new MutableLiveData<>();
+        emergencyService.setValue("Emergency Service");
+        return emergencyService;
+    }
+
+    public LiveData<String> getLaboratoryService() {
+        MutableLiveData<String> laboratoryService = new MutableLiveData<>();
+        laboratoryService.setValue("Laboratory Service");
+        return laboratoryService;
+    }
+
+    public LiveData<String> getRadiologyService() {
+        MutableLiveData<String> radiologyService = new MutableLiveData<>();
+        radiologyService.setValue("Radiology Service");
+        return radiologyService;
+    }
 }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -47,6 +48,21 @@ public class AppointmentFragment extends Fragment {
 
             // Pass the data to the ViewModel
             appointmentViewModel.submitAppointment(doctorName, time, day, email);
+
+            if (doctorNameEditText.getText().toString().equals("") ||
+                    timeEditText.getText().toString().equals("") ||
+                    dayEditText.getText().toString().equals("") ||
+                    emailEditText.getText().toString().equals("")) {
+
+                Toast.makeText(getActivity().getApplicationContext(), "All fields are required!!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getActivity().getApplicationContext(), "Appointment submitted successfully", Toast.LENGTH_SHORT).show();
+                doctorNameEditText.setText("");
+                timeEditText.setText("");
+                dayEditText.setText("");
+                emailEditText.setText("");
+            }
+
         });
 
         return view;

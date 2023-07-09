@@ -24,8 +24,18 @@ public class ServiceFragment extends Fragment {
         binding = FragmentServiceBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
+        final TextView textView = binding.serviceTextView;
         serviceViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        final TextView emergencyServiceTextView = binding.emergencyServiceTextView;
+        serviceViewModel.getEmergencyService().observe(getViewLifecycleOwner(), emergencyServiceTextView::setText);
+
+        final TextView laboratoryServiceTextView = binding.laboratoryServiceTextView;
+        serviceViewModel.getLaboratoryService().observe(getViewLifecycleOwner(), laboratoryServiceTextView::setText);
+
+        final TextView radiologyServiceTextView = binding.radiologyServiceTextView;
+        serviceViewModel.getRadiologyService().observe(getViewLifecycleOwner(), radiologyServiceTextView::setText);
+
         return root;
     }
 
