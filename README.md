@@ -32,8 +32,8 @@ Kveonn                 |
 vintageparasite        |
 ````
 ### Team
-1. Felix Ashong - 10961725
-2. Bright Quaye - 10973283
+1. FelixAshong - 10961725
+2. Bright312 - 10973283
 3. Daniel Ayesu Kissiedu - 10969867
 4.  Jonathan Hatekah - 10965214
 5.  Stanley Hinson- 10954877
