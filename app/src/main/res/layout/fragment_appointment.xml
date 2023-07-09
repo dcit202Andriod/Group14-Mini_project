@@ -70,7 +70,9 @@
         android:layout_width="46dp"
         android:layout_height="wrap_content"
         android:text="@string/day"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/dayEditText"
