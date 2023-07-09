@@ -17,7 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
-        android:hint="@string/doctor_name"
         android:minHeight="48dp"
         tools:ignore="TextFields,VisualLintTextFieldSize" />
 

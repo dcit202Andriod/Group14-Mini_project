@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.doctors.DoctorsFragment">
+    tools:context=".ui.doctors.DoctorsFragment"
+    android:background="@drawable/doctorsimg">
 
     <ListView
         android:id="@+id/listViewDoctors"
