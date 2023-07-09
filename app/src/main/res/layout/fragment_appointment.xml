@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:text="@string/patient_name"
         android:textSize="20sp"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:text="@string/select_doctor"
         android:textSize="20sp"
+        android:textStyle="bold"
         />
 
     <Spinner
@@ -67,7 +69,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/date" />
+        android:text="@string/date"
+        android:textSize="16sp"
+        />
 
     <EditText
         android:id="@+id/dayEditText"
@@ -82,7 +86,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email" />
+        android:text="@string/email"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/emailEditText"
