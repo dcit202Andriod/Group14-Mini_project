@@ -8,11 +8,6 @@ public class DoctorsViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public DoctorsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is service fragment");
-    }
-
     public DoctorsViewModel(MutableLiveData<String> mText) {
         this.mText = mText;
     }

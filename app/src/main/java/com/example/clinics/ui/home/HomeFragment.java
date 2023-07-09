@@ -15,26 +15,20 @@ import com.example.clinics.R;
 
 public class HomeFragment extends Fragment {
 
-    private TextView welcomeText;
-    private Button appointmentButton;
-
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        welcomeText = root.findViewById(R.id.text_home);
-        appointmentButton = root.findViewById(R.id.btn_appointment);
+        TextView welcomeText = root.findViewById(R.id.text_home);
+        Button appointmentButton = root.findViewById(R.id.btn_appointment);
 
         // Set welcome text
         welcomeText.setText("Welcome to the Hospital App!");
 
         // Handle button click
-        appointmentButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Perform some action, e.g., open appointment screen
-            }
+        appointmentButton.setOnClickListener(v -> {
+            // Perform some action, e.g., open appointment screen
         });
 
         return root;

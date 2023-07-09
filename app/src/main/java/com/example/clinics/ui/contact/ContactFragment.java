@@ -18,14 +18,13 @@ public class ContactFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ContactViewModel ContactViewModel =
-                new ViewModelProvider(this).get(ContactViewModel.class);
+        new ViewModelProvider(this).get(ContactViewModel.class);
 
         binding = FragmentContactBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
-        ContactViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        com.example.clinics.ui.contact.ContactViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

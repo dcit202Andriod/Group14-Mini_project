@@ -11,6 +11,7 @@
     <string name="menu_service">Service</string>
     <string name="menu_appointment">Appointment</string>
     <string name="menu_doctors">Doctors</string>
+    <string name="doctor_name">Doctor Name</string>
     <string name="menu_contact">Contact</string>
 
 </resources>
