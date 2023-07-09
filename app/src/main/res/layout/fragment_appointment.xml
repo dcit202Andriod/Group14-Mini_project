@@ -5,12 +5,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".ui.appointment.AppointmentFragment">
+    tools:context=".ui.appointment.AppointmentFragment"
+    android:background="@drawable/doctor_appointment"
+    android:layout_centerVertical="true">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doctor Name:" />
+        android:text="Name"
+        />
 
     <EditText
         android:id="@+id/doctorNameEditText"
@@ -25,19 +29,21 @@
         android:layout_height="wrap_content"
         android:text="Time:" />
 
+
     <EditText
         android:id="@+id/timeEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints="None"
         android:hint="Time"
+        android:inputType="time"
         android:minHeight="48dp"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Day:" />
+        android:text="Date" />
 
     <EditText
         android:id="@+id/dayEditText"
@@ -45,6 +51,7 @@
         android:layout_height="wrap_content"
         android:hint="Day"
         android:importantForAutofill="no"
+        android:inputType="date"
         android:minHeight="48dp"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
@@ -61,6 +68,7 @@
         android:importantForAutofill="no"
         android:minHeight="48dp"
         android:visibility="visible"
+        android:inputType="textEmailAddress"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <Button
@@ -69,5 +77,6 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         tools:ignore="HardcodedText" />
+
 
 </LinearLayout>
