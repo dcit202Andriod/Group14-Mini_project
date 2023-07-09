@@ -54,9 +54,9 @@ public class AppointmentFragment extends Fragment {
                     dayEditText.getText().toString().equals("") ||
                     emailEditText.getText().toString().equals("")) {
 
-                Toast.makeText(requireActivity().getApplicationContext(), "All fields are required!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity().getApplicationContext(), "All fields are required!!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(requireActivity().getApplicationContext(), "Appointment submitted successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity().getApplicationContext(), "Appointment submitted successfully", Toast.LENGTH_SHORT).show();
                 doctorNameEditText.setText("");
                 timeEditText.setText("");
                 dayEditText.setText("");
