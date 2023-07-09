@@ -63,15 +63,14 @@
         android:inputType="time"
         android:minHeight="50dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="46dp"
         android:layout_height="wrap_content"
-        android:text="@string/date"
-        android:textSize="16sp"
-        />
+        android:text="@string/day"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/dayEditText"
@@ -88,7 +87,9 @@
         android:layout_height="wrap_content"
         android:text="@string/email"
         android:textStyle="bold"
-        />
+        android:textSize="20sp"
+
+    />
 
     <EditText
         android:id="@+id/emailEditText"
