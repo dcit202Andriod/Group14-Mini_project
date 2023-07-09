@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/contact_gif"
     android:gravity="center">
 
     <TextView
@@ -9,17 +10,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Thank you for choosing Clinics!"
+        android:text="@string/thank_you_for_choosing_clinics"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/message_textview1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="2dp"
-        android:text="In case of emergencies or urgent medical assistance, we strongly advise you to call our emergency helpline immediately for immediate support."
+        android:layout_marginStart="2dp"
+        android:text="@string/in_case_of_emergencies_or_urgent_medical_assistance_we_strongly_advise_you_to_call_our_emergency_helpline_immediately_for_immediate_support"
         android:textSize="12sp"
         android:padding="10dp"
         android:textStyle="bold" />
@@ -28,13 +29,13 @@
         android:id="@+id/call_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Call Hospital"
+        android:text="@string/call_hospital"
         android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/email_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send Email" />
+        android:text="@string/send_email" />
 
 </LinearLayout>
