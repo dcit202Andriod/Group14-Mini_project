@@ -16,18 +16,20 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        TextView welcomeQuoteTextView = root.findViewById(R.id.welcomeQuoteTextView);
-        TextView healthQuoteTextView = root.findViewById(R.id.healthQuoteTextView);
+        TextView greetingText = root.findViewById(R.id.text_greeting);
+        TextView aboutText = root.findViewById(R.id.text_about);
+        TextView achievementText = root.findViewById(R.id.text_achievements);
+        TextView goalText = root.findViewById(R.id.text_goals);
+        TextView testimoniesText = root.findViewById(R.id.text_testimonies);
 
-        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
-
-        String welcomeQuote = homeViewModel.getWelcomeQuote();
-        String healthQuote = homeViewModel.getHealthQuote();
-
-        welcomeQuoteTextView.setText(welcomeQuote);
-        healthQuoteTextView.setText(healthQuote);
+        homeViewModel.getGreetingMessage().observe(getViewLifecycleOwner(), greetingText::setText);
+        homeViewModel.getAboutMessage().observe(getViewLifecycleOwner(), aboutText::setText);
+        homeViewModel.getAchievementMessage().observe(getViewLifecycleOwner(), achievementText::setText);
+        homeViewModel.getGoalMessage().observe(getViewLifecycleOwner(), goalText::setText);
+        homeViewModel.getTestimoniesMessage().observe(getViewLifecycleOwner(), testimoniesText::setText);
 
         return root;
     }

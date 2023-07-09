@@ -1,22 +1,48 @@
 package com.example.clinics.ui.home;
 
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
 
-    private final String welcomeQuote;
-    private final String healthQuote;
+    private final MutableLiveData<String> greetingMessage;
+    private final MutableLiveData<String> aboutMessage;
+    private final MutableLiveData<String> achievementMessage;
+    private final MutableLiveData<String> goalMessage;
+    private final MutableLiveData<String> testimoniesMessage;
 
     public HomeViewModel() {
-        welcomeQuote = "Embrace a healthier lifestyle and experience the joy of well-being. Welcome to a new chapter of your life.";
-        healthQuote = "Health is a state of complete physical, mental, and social well-being, not merely the absence of disease or infirmity. - World Health Organization";
+        greetingMessage = new MutableLiveData<>();
+        aboutMessage = new MutableLiveData<>();
+        achievementMessage = new MutableLiveData<>();
+        goalMessage = new MutableLiveData<>();
+        testimoniesMessage = new MutableLiveData<>();
+
+        greetingMessage.setValue("Welcome to the Clinics!");
+        aboutMessage.setValue("About the Hospital called Clinics");
+        achievementMessage.setValue("Achievements: ...");
+        goalMessage.setValue("Goals: ...");
+        testimoniesMessage.setValue("Testimonies: ...");
     }
 
-    public String getWelcomeQuote() {
-        return welcomeQuote;
+    public LiveData<String> getGreetingMessage() {
+        return greetingMessage;
     }
 
-    public String getHealthQuote() {
-        return healthQuote;
+    public LiveData<String> getAboutMessage() {
+        return aboutMessage;
+    }
+
+    public LiveData<String> getAchievementMessage() {
+        return achievementMessage;
+    }
+
+    public LiveData<String> getGoalMessage() {
+        return goalMessage;
+    }
+
+    public LiveData<String> getTestimoniesMessage() {
+        return testimoniesMessage;
     }
 }
