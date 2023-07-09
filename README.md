@@ -37,8 +37,8 @@ vintageparasite        |
 3. Daniel Ayesu Kissiedu - 10969867
 4. underagee - 10965214
 5. StanleyHinson - 10954877
-6. Dennis Aidoo -10972448
-7. Martin Amoah - 10980029
+6. vintageparasite -10972448
+7. Martin-Amoah - 10980029
 8. Odofe Samuella Frimpong - 10972364
 9. Adu-Ameyaw Randy - 10973161
 10. Samuel Osei Boakye junior - 10953117
