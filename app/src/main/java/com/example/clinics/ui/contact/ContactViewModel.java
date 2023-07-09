@@ -4,14 +4,11 @@ import androidx.lifecycle.ViewModel;
 
 public class ContactViewModel extends ViewModel {
 
-    private String phoneNumber = "1234567890";
-    private String emailAddress = "example@example.com";
-
     public String getPhoneNumber() {
-        return phoneNumber;
+        return "1234567890";
     }
 
     public String getEmailAddress() {
-        return emailAddress;
+        return "example@example.com";
     }
 }
