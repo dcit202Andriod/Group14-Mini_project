@@ -1,8 +1,8 @@
 package com.example.clinics.ui.doctors;
 
 public class Doctor {
-    private String name;
-    private String specialty;
+    private final String name;
+    private final String specialty;
 
     public Doctor(String name, String specialty) {
         this.name = name;

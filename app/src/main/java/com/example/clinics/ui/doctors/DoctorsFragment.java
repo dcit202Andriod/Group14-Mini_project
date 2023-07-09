@@ -14,14 +14,13 @@ public class DoctorsFragment extends Fragment {
 
     private FragmentDoctorsBinding binding;
     private DoctorsAdapter doctorsAdapter;
-    private DoctorsViewModel doctorsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentDoctorsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        doctorsViewModel = new ViewModelProvider(this).get(DoctorsViewModel.class);
+        DoctorsViewModel doctorsViewModel = new ViewModelProvider(this).get(DoctorsViewModel.class);
         doctorsViewModel.getDoctors().observe(getViewLifecycleOwner(), doctors -> {
             doctorsAdapter = new DoctorsAdapter(requireContext(), doctors);
             binding.listViewDoctors.setAdapter(doctorsAdapter);
