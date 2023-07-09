@@ -47,6 +47,18 @@
         <item>Dr. Robert Wilson</item>
     </string-array>
 
+    <string name="all_achievements">
+    <![CDATA[
+        • Award-Winning Patient Safety Initiatives
+        • Leaders in Minimally Invasive Surgeries
+        • Excellence in Emergency Care
+        • Pioneers in Telemedicine Services
+        • Recognized for Exceptional Maternity Care
+        • Commitment to Medical Education and Training
+    ]]>
+</string>
+
+
 
 
 </resources>
