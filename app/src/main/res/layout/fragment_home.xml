@@ -1,8 +1,7 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/CLINICS"
     tools:context=".ui.home.HomeFragment">
 
@@ -10,41 +9,76 @@
         android:id="@+id/text_greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="#5811D8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/welcome_to_the_clinics" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#021165"
+        android:layout_below="@id/text_greeting"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
+        android:text="@string/quot_the_greatest_wealth_is_health_quot_virgil" />
 
     <TextView
         android:id="@+id/text_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp" />
+        android:textSize="18sp"
+        android:textColor="#370340"
+        android:layout_below="@id/text_greeting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/about_the_hospital_called_clinics" />
 
     <TextView
-        android:id="@+id/text_achievement"
+        android:id="@+id/text_achievements"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:textColor="#5626AC"
+        android:layout_below="@id/text_about"
+        android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp" />
+        android:text="@string/achievements" />
 
     <TextView
-        android:id="@+id/text_goal"
+        android:id="@+id/text_goals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:textColor="#0A209A"
+        android:layout_below="@id/text_achievements"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp" />
+        android:text="@string/goals" />
+
+    <TextView
+        android:id="@+id/text_aims"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#8A0A0A"
+        android:layout_below="@id/text_goals"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/aims" />
 
     <TextView
         android:id="@+id/text_testimonies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
+        android:textColor="#4A0606"
+        android:layout_below="@id/text_aims"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp" />
+        android:text="@string/testimonies" />
 
-</LinearLayout>
+</RelativeLayout>
