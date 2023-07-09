@@ -21,8 +21,8 @@ public class HomeFragment extends Fragment {
 
         TextView greetingText = root.findViewById(R.id.text_greeting);
         TextView aboutText = root.findViewById(R.id.text_about);
-        TextView achievementText = root.findViewById(R.id.text_achievement);
-        TextView goalText = root.findViewById(R.id.text_goal);
+        TextView achievementText = root.findViewById(R.id.text_achievements);
+        TextView goalText = root.findViewById(R.id.text_goals);
         TextView testimoniesText = root.findViewById(R.id.text_testimonies);
 
         homeViewModel.getGreetingMessage().observe(getViewLifecycleOwner(), greetingText::setText);
