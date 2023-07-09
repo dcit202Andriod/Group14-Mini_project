@@ -18,8 +18,18 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 
 ## Team Roles
 ````
-Usernames              -            Role
-
+Usernames              |            Role
+_______________________|_________________________
+ayyesu                 |
+Bright312              |
+FelixAshong            |
+sfodofe                |
+Martin-Amoah           |
+underagee              |
+Ameyyaw                |
+StanleyHinson          |
+Kveonn                 |
+vintageparasite        |
 ````
 ### Team
 1. Felix Ashong - 10961725
