@@ -18,10 +18,10 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 
 ## Team Roles
 ````
-Usernames              -            Role
+Usurnames              -            Role
 
 ````
-## Team
+### Team
 1. Felix Ashong - 10961725
 2. Bright Quaye - 10973283
 3. Daniel Ayesu Kissiedu - 10969867
