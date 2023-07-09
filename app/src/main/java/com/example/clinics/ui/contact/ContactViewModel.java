@@ -1,23 +1,17 @@
 package com.example.clinics.ui.contact;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class ContactViewModel extends ViewModel {
 
-    private static MutableLiveData<String> mText = null;
+    private String phoneNumber = "1234567890";
+    private String emailAddress = "example@example.com";
 
-    public ContactViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is service fragment");
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public ContactViewModel(MutableLiveData<String> mText) {
-        this.mText = mText;
-    }
-
-    public static LiveData<String> getText() {
-        return mText;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 }
