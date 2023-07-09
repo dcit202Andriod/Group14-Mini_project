@@ -24,11 +24,22 @@
     <string name="aims">Aims: </string>
     <string name="testimonies">Testimonies: </string>
     <string name="doctor_name_description">Enter the name of the doctor</string>
-    <string name="name">Name</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="select_doctor">Select Doctor</string>
     <string name="doctor_name_hint">Enter doctor\'s name</string>
     <string name="time">Time:</string>
     <string name="email">Email:</string>
     <string name="date">Date</string>
+    <string-array name="spinner_items">
+        <item>Dr. Daniel Rodriguez</item>
+        <item>Dr. Benjamin Cooper</item>
+        <item>Dr. Alex Johnson</item>
+        <item>Dr. Olivia Hall</item>
+        <item>Dr. Megan Thompson</item>
+        <item>Dr. Michael Johnson</item>
+        <item>Dr. Robert Wilson</item>
+    </string-array>
+
 
 
 </resources>
