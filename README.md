@@ -12,7 +12,6 @@ In case of a medical emergency, users can tap on the hospital's contact informat
 
 The Clinics app prioritizes user experience and aims to simplify the process of seeking medical care.
 It provides a user-friendly interface, allowing users to navigate effortlessly through the various features and functionalities.
-The app also incorporates intuitive search and filtering options, making it easier for users to find healthcare providers based on their specific requirements, such as location, specialty, or availability.
 With Clinics, users can take control of their healthcare needs by easily booking appointments and accessing emergency services whenever necessary.
 It serves as a reliable companion for individuals seeking efficient and accessible healthcare services right at their fingertips.
 
@@ -31,7 +30,7 @@ StanleyHinson          |
 Kveonn                 |
 vintageparasite        |
 ````
-### Team
+### Team 👨‍👧‍👦
 1. FelixAshong - 10961725
 2. Bright312 - 10973283
 3. Daniel Ayesu Kissiedu - 10969867
