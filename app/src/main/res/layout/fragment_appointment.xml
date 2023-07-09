@@ -15,6 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/patient_name"
+        android:textSize="20sp"
         />
 
     <EditText
@@ -31,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/select_doctor"
+        android:textSize="20sp"
         />
 
     <Spinner
@@ -42,11 +44,12 @@
         android:layout_marginBottom="8dp" />
 
 
-
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="58dp"
         android:layout_height="wrap_content"
-        android:text="@string/time" />
+        android:text="@string/time"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
     <EditText
@@ -56,8 +59,9 @@
         android:autofillHints="None"
         android:hint="Time"
         android:inputType="time"
-        android:minHeight="48dp"
-        android:textColorHint="#813720"
+        android:minHeight="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <TextView
@@ -72,7 +76,7 @@
         android:hint="Day"
         android:importantForAutofill="no"
         android:inputType="date"
-        android:minHeight="48dp"
+        android:minHeight="50dp"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <TextView
