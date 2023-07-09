@@ -14,18 +14,32 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@string/patient_name"
         />
 
     <EditText
-        android:id="@+id/doctorNameEditText"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:autofillHints=""
-        android:hint="@string/doctor_name_hint"
-        android:inputType="textPersonName"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp" />
+        android:id="@+id/patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_doctor"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_items"
+        android:layout_marginBottom="4dp"/>
+
 
     <TextView
         android:layout_width="wrap_content"
