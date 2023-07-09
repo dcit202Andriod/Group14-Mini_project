@@ -130,7 +130,9 @@
         android:layout_width="114dp"
         android:layout_height="wrap_content"
         android:text="Submit"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:textStyle="bold"
+        />
 
 
 </LinearLayout>
