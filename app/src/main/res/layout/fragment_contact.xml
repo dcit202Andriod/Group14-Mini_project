@@ -18,6 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:layout_marginLeft="2dp"
         android:text="In case of emergencies or urgent medical assistance, we strongly advise you to call our emergency helpline immediately for immediate support."
         android:textSize="12sp"
         android:padding="10dp"
