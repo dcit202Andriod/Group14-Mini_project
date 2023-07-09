@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
     tools:context=".ui.appointment.AppointmentFragment"
     android:background="@drawable/doctor_appointment"
     android:layout_centerVertical="true">
@@ -13,21 +14,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="@string/name"
         />
 
     <EditText
         android:id="@+id/doctorNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
         android:autofillHints=""
-        android:minHeight="48dp"
-        tools:ignore="TextFields,VisualLintTextFieldSize" />
+        android:hint="@string/doctor_name_hint"
+        android:inputType="textPersonName"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time:" />
+        android:text="@string/time" />
 
 
     <EditText
@@ -38,12 +41,13 @@
         android:hint="Time"
         android:inputType="time"
         android:minHeight="48dp"
+        android:textColorHint="#5D4037"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date" />
+        android:text="@string/date" />
 
     <EditText
         android:id="@+id/dayEditText"
@@ -58,7 +62,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email:" />
+        android:text="@string/email" />
 
     <EditText
         android:id="@+id/emailEditText"
@@ -66,9 +70,11 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         android:importantForAutofill="no"
-        android:minHeight="48dp"
-        android:visibility="visible"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:visibility="visible"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
 
     <Button
