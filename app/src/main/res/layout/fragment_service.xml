@@ -37,9 +37,10 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_service2"/>
+                    android:src="@drawable/icon_service1"/>
 
                 <TextView
+                    android:id="@+id/serviceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Service 1"
@@ -63,6 +64,7 @@
                     android:src="@drawable/icon_service2"/>
 
                 <TextView
+                    android:id="@+id/emergencyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Service 2"
@@ -93,6 +95,7 @@
                     android:src="@drawable/icon_service3"/>
 
                 <TextView
+                    android:id="@+id/laboratoryServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Service 3"
@@ -116,6 +119,7 @@
                     android:src="@drawable/icon_service4"/>
 
                 <TextView
+                    android:id="@+id/radiologyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Service 4"
