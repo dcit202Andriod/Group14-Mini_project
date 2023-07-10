@@ -21,15 +21,13 @@ public class HomeFragment extends Fragment {
 
         TextView greetingText = root.findViewById(R.id.text_greeting);
         TextView aboutText = root.findViewById(R.id.text_about);
-        TextView achievementText = root.findViewById(R.id.text_achievements);
-        TextView goalText = root.findViewById(R.id.text_goals);
-        TextView testimoniesText = root.findViewById(R.id.text_testimonies);
+        TextView achievementText = root.findViewById(R.id.text_achievements_and_goals);
+        TextView goalText = root.findViewById(R.id.text_all_aims);
 
         homeViewModel.getGreetingMessage().observe(getViewLifecycleOwner(), greetingText::setText);
         homeViewModel.getAboutMessage().observe(getViewLifecycleOwner(), aboutText::setText);
         homeViewModel.getAchievementMessage().observe(getViewLifecycleOwner(), achievementText::setText);
         homeViewModel.getGoalMessage().observe(getViewLifecycleOwner(), goalText::setText);
-        homeViewModel.getTestimoniesMessage().observe(getViewLifecycleOwner(), testimoniesText::setText);
 
         return root;
     }
