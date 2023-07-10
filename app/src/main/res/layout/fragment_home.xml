@@ -37,27 +37,17 @@
         android:layout_marginTop="48dp"
         android:text="@string/about_the_hospital_called_clinics" />
 
-    <TextView
-        android:id="@+id/text_achievements"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="#5626AC"
-        android:layout_below="@id/text_about"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/achievements" />
 
     <TextView
-        android:id="@+id/text_goals"
+        android:id="@+id/text_achievements_and_goals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="#0A209A"
-        android:layout_below="@id/text_achievements"
-        android:layout_marginTop="8dp"
+        android:layout_below="@id/text_about"
         android:layout_marginStart="16dp"
-        android:text="@string/goals" />
+        android:layout_marginTop="47dp"
+        android:text="@string/achievements_and_goals"
+        android:textColor="#5626AC"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/text_aims"
@@ -65,10 +55,25 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textColor="#8A0A0A"
-        android:layout_below="@id/text_goals"
+        android:layout_below="@id/text_aims"
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/aims" />
+
+
+    <TextView
+        android:id="@+id/text_all_aims"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#8A0A0A"
+        android:layout_below="@id/text_all_aims"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/all_aims" />
+
+
 
     <TextView
         android:id="@+id/text_testimonies"
