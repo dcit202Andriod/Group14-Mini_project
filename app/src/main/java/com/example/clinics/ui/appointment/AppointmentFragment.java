@@ -45,6 +45,7 @@ public class AppointmentFragment extends Fragment {
         timeEditText = view.findViewById(R.id.timeEditText);
         phoneNumber = view.findViewById(R.id.phoneNumberText);
         emailEditText = view.findViewById(R.id.emailEditText);
+        dateEditText = view.findViewById(R.id.dateEditText);
         patientName = view.findViewById(R.id.patient_name);
         Button submitButton = view.findViewById(R.id.submitButton);
 
