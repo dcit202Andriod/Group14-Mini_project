@@ -28,10 +28,10 @@ _______________________|_________________________
 ayyesu                 |
 Bright312              |
 FelixAshong            |
-sfodofe                |
+sfodofe                | Project Documentation
 Martin-Amoah           |
 underagee              |
-Ameyyaw                |
+Ameyyaw                | Project Documentation
 StanleyHinson          |
 Kveonn                 |
 vintageparasite        |
