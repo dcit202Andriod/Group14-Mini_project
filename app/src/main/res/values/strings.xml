@@ -37,6 +37,7 @@
     <string name="in_case_of_emergencies_or_urgent_medical_assistance_we_strongly_advise_you_to_call_our_emergency_helpline_immediately_for_immediate_support">In case of emergencies or urgent medical assistance, we strongly advise you to call our emergency helpline immediately for immediate support.</string>
     <string name="Day" />
     <string name="day">Day</string>
+    <string name="submit">Submit</string>
     <string-array name="spinner_items">
         <item>Dr. Daniel Rodriguez</item>
         <item>Dr. Benjamin Cooper</item>
