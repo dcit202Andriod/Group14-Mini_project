@@ -17,6 +17,7 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 
 ## Features 🔧🔗
 - [x] Appointment Booking
+- [x] Toast Message Display for successful booking and errors
 
 
 ## Team Roles
