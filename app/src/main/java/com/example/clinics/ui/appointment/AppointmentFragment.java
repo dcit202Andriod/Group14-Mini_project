@@ -27,6 +27,7 @@ public class AppointmentFragment extends Fragment {
     private EditText emailEditText;
     private AppointmentViewModel appointmentViewModel;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

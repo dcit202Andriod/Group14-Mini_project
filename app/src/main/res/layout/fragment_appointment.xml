@@ -66,24 +66,6 @@
         android:textColor="@android:color/black"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/day"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black" />
-
-    <EditText
-        android:id="@+id/dayEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="Day"
-        android:inputType="date"
-        android:minHeight="50dp"
-        android:textColor="@android:color/black"
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:layout_width="wrap_content"
