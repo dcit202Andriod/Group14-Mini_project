@@ -18,9 +18,6 @@ public class ServiceFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_service, container, false);
 
-        TextView serviceTextView = root.findViewById(R.id.serviceText);
-        serviceTextView.setText("Services");
-
         TextView emergencyServiceTextView = root.findViewById(R.id.emergencyServiceText);
         emergencyServiceTextView.setText("Emergency Care");
 
