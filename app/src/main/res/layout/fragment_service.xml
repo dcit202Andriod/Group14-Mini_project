@@ -333,7 +333,7 @@
                     android:id="@+id/palliativeServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Palliative Care and Hospice Services"
+                    android:text="@string/palliative_care"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
