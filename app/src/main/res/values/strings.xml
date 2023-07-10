@@ -80,6 +80,8 @@
 <string name="aim5">To be a leader in healthcare innovation and research.</string>
 <string name="aim6">To ensure patient safety and provide a comfortable healing environment.</string>
 
-
+// Services
+    <string name="emergency_care">Emergency Care</string>
+    <string name="inpatient_care">Inpatient Care</string>
 
 </resources>
