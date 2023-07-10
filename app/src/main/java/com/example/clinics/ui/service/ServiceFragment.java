@@ -8,63 +8,52 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.example.clinics.databinding.FragmentServiceBinding;
+import com.example.clinics.R;
 
 public class ServiceFragment extends Fragment {
 
-    private FragmentServiceBinding binding;
-    private ServiceViewModel serviceViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentServiceBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        final TextView serviceTextView = binding.serviceText;
-        final TextView emergencyServiceTextView = binding.emergencyServiceText;
-        final TextView laboratoryServiceTextView = binding.laboratoryServiceText;
-        final TextView radiologyServiceTextView = binding.radiologyServiceText;
+        View root = inflater.inflate(R.layout.fragment_service, container, false);
 
+        TextView serviceTextView = root.findViewById(R.id.serviceText);
+        serviceTextView.setText("Services");
 
-        serviceViewModel = new ViewModelProvider(this).get(ServiceViewModel.class);
+        TextView emergencyServiceTextView = root.findViewById(R.id.emergencyServiceText);
+        emergencyServiceTextView.setText("Emergency Care");
 
-        serviceViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(String text) {
-                serviceTextView.setText(text);
-            }
-        });
+        TextView inpatientServiceTextView = root.findViewById(R.id.inpatientServiceText);
+        inpatientServiceTextView.setText("Inpatient Care");
 
-        serviceViewModel.getEmergencyService().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(String emergencyService) {
-                emergencyServiceTextView.setText(emergencyService);
-            }
-        });
+        TextView outpatientServiceTextView = root.findViewById(R.id.outpatientServiceText);
+        outpatientServiceTextView.setText("Outpatient Care");
 
-        serviceViewModel.getLaboratoryService().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(String laboratoryService) {
-                laboratoryServiceTextView.setText(laboratoryService);
-            }
-        });
+        TextView surgeryServiceTextView = root.findViewById(R.id.surgeryServiceText);
+        surgeryServiceTextView.setText("Surgery");
 
-        serviceViewModel.getRadiologyService().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(String radiologyService) {
-                radiologyServiceTextView.setText(radiologyService);
-            }
-        });
+        TextView diagnosticServiceTextView = root.findViewById(R.id.diagnosticServiceText);
+        diagnosticServiceTextView.setText("Diagnostic Services");
+
+        TextView maternityServiceTextView = root.findViewById(R.id.maternityServiceText);
+        maternityServiceTextView.setText("Maternity and Neonatal Care");
+
+        TextView rehabilitationServiceTextView = root.findViewById(R.id.rehabilitationServiceText);
+        rehabilitationServiceTextView.setText("Rehabilitation Services");
+
+        TextView mentalHealthServiceTextView = root.findViewById(R.id.mentalHealthServiceText);
+        mentalHealthServiceTextView.setText("Mental Health Services");
+
+        TextView specializedServiceTextView = root.findViewById(R.id.specializedServiceText);
+        specializedServiceTextView.setText("Specialized Medical Services");
+
+        TextView pharmacyServiceTextView = root.findViewById(R.id.pharmacyServiceText);
+        pharmacyServiceTextView.setText("Pharmacy Services");
+
+        TextView palliativeServiceTextView = root.findViewById(R.id.palliativeServiceText);
+        palliativeServiceTextView.setText("Palliative Care and Hospice Services");
 
         return root;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
     }
 }
