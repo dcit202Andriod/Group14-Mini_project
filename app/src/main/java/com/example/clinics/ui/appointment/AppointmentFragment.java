@@ -23,8 +23,10 @@ public class AppointmentFragment extends Fragment {
 
     private EditText doctorNameEditText;
     private EditText timeEditText;
-    private EditText dayEditText;
+    private EditText dateEditText;
     private EditText emailEditText;
+    private EditText phoneNumber;
+    private EditText patientName;
     private AppointmentViewModel appointmentViewModel;
 
 
@@ -41,24 +43,27 @@ public class AppointmentFragment extends Fragment {
         // Initialize the UI components
         doctorNameEditText = view.findViewById(R.id.patient_name);
         timeEditText = view.findViewById(R.id.timeEditText);
-        dayEditText = view.findViewById(R.id.dayEditText);
+        phoneNumber = view.findViewById(R.id.phoneNumberText);
         emailEditText = view.findViewById(R.id.emailEditText);
+        patientName = view.findViewById(R.id.patient_name);
         Button submitButton = view.findViewById(R.id.submitButton);
 
         // Set an OnClickListener on the dayEditText to show the DatePickerDialog
-        dayEditText.setOnClickListener(v -> showDatePicker());
+        dateEditText.setOnClickListener(v -> showDatePicker());
 
         submitButton.setOnClickListener(v -> {
             // Retrieve the input values
             String doctorName = doctorNameEditText.getText().toString();
             String time = timeEditText.getText().toString();
-            String day = dayEditText.getText().toString();
+            String date = dateEditText.getText().toString();
             String email = emailEditText.getText().toString();
+            String phone = phoneNumber.getText().toString();
+            String patient_Name = patientName.getText().toString();
 
             // Pass the data to the ViewModel
-            appointmentViewModel.submitAppointment(doctorName, time, day, email);
+            appointmentViewModel.submitAppointment(doctorName, time, date, email);
 
-            if (doctorName.isEmpty() || time.isEmpty() || day.isEmpty() || email.isEmpty()) {
+            if (patient_Name.isEmpty() ||doctorName.isEmpty() || time.isEmpty() || date.isEmpty() || email.isEmpty() || phone.isEmpty()) {
                 Toast.makeText(requireContext(), "All fields are required!", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(requireContext(), "Appointment submitted successfully", Toast.LENGTH_SHORT).show();
@@ -82,7 +87,7 @@ public class AppointmentFragment extends Fragment {
             calendar.set(year1, month1, dayOfMonth);
             DateFormat dateFormat = DateFormat.getDateInstance();
             String selectedDate = dateFormat.format(calendar.getTime());
-            dayEditText.setText(selectedDate);
+            dateEditText.setText(selectedDate);
         }, year, month, day);
 
         // Show the DatePickerDialog
@@ -92,7 +97,7 @@ public class AppointmentFragment extends Fragment {
     private void clearForm() {
         doctorNameEditText.setText("");
         timeEditText.setText("");
-        dayEditText.setText("");
+        dateEditText.setText("");
         emailEditText.setText("");
     }
 }
