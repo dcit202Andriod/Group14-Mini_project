@@ -6,6 +6,7 @@
     android:background="#FFFFFF">
 
     <TextView
+        android:id="@+id/serviceText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Services"
@@ -26,6 +27,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/emergencyService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -40,6 +42,7 @@
                     android:src="@drawable/icon_emergency"/>
 
                 <TextView
+                    android:id="@+id/emergencyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Emergency Care"
@@ -49,6 +52,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/inpatientService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -63,6 +67,7 @@
                     android:src="@drawable/icon_inpatient"/>
 
                 <TextView
+                    android:id="@+id/inpatientServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Inpatient Care"
@@ -79,6 +84,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/outpatientService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -93,6 +99,7 @@
                     android:src="@drawable/icon_outpatient"/>
 
                 <TextView
+                    android:id="@+id/outpatientServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Outpatient Care"
@@ -102,6 +109,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/surgeryService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -116,6 +124,7 @@
                     android:src="@drawable/icon_surgery"/>
 
                 <TextView
+                    android:id="@+id/surgeryServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Surgery"
@@ -132,6 +141,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/diagnosticService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -146,6 +156,7 @@
                     android:src="@drawable/icon_diagnostic"/>
 
                 <TextView
+                    android:id="@+id/diagnosticServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Diagnostic Services"
@@ -155,6 +166,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/maternityService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -164,11 +176,12 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/icon_maternity"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_maternity"/>
 
                 <TextView
+                    android:id="@+id/maternityServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Maternity and Neonatal Care"
@@ -185,6 +198,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/rehabilitationService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -199,6 +213,7 @@
                     android:src="@drawable/icon_rehabilitation"/>
 
                 <TextView
+                    android:id="@+id/rehabilitationServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rehabilitation Services"
@@ -208,6 +223,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/mentalHealthService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -222,12 +238,7 @@
                     android:src="@drawable/icon_mental_health"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mental Health Services"
-                    android:textColor="#FFFFFF"
-                ```xml
-                <TextView
+                    android:id="@+id/mentalHealthServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mental Health Services"
@@ -236,7 +247,15 @@
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <LinearLayout
+                android:id="@+id/specializedService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -251,6 +270,7 @@
                     android:src="@drawable/icon_specialized"/>
 
                 <TextView
+                    android:id="@+id/specializedServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Specialized Medical Services"
@@ -259,14 +279,8 @@
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <LinearLayout
+                android:id="@+id/pharmacyService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -281,6 +295,7 @@
                     android:src="@drawable/icon_pharmacy"/>
 
                 <TextView
+                    android:id="@+id/pharmacyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pharmacy Services"
@@ -289,7 +304,15 @@
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <LinearLayout
+                android:id="@+id/palliativeService"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -304,6 +327,7 @@
                     android:src="@drawable/icon_palliative"/>
 
                 <TextView
+                    android:id="@+id/palliativeServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Palliative Care and Hospice Services"
