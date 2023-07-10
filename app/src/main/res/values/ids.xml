@@ -2,4 +2,5 @@
 <resources>
     <item name="btn_appointment" type="id" />
     <item name="backgroundWebView" type="id" />
+    <item name="doctorNameEditText" type="id" />
 </resources>
