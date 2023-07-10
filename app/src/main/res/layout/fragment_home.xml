@@ -49,17 +49,7 @@
         android:textColor="#5626AC"
         android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/text_aims"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="#8A0A0A"
-        android:layout_below="@id/text_aims"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/aims" />
+
 
 
     <TextView
@@ -75,15 +65,5 @@
 
 
 
-    <TextView
-        android:id="@+id/text_testimonies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="#4A0606"
-        android:layout_below="@id/text_aims"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/testimonies" />
 
 </RelativeLayout>
