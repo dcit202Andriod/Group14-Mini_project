@@ -34,7 +34,7 @@ underagee              |
 Ameyyaw                | Project Documentation
 StanleyHinson          |
 Kveonn                 |
-vintageparasite        |
+vintageparasite        | Project Documentation
 ````
 ### Team 👨‍👧‍👦
 1. FelixAshong - 10961725
