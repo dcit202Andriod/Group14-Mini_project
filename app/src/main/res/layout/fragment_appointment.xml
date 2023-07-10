@@ -10,24 +10,25 @@
     android:background="@drawable/doctor_appointment"
     android:layout_centerVertical="true">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/patient_name"
         android:textSize="20sp"
         android:textStyle="bold"
-        />
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/patient_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="Your name"
-        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+        android:textColor="@android:color/black"
+        android:textColorHint="#5D4037"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +36,7 @@
         android:text="@string/select_doctor"
         android:textSize="20sp"
         android:textStyle="bold"
-        />
+        android:textColor="@android:color/black" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -43,65 +44,66 @@
         android:layout_height="wrap_content"
         android:entries="@array/spinner_items"
         android:padding="15dp"
-        android:layout_marginBottom="8dp" />
-
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
 
     <TextView
-        android:layout_width="58dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/time"
         android:textSize="20sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/timeEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="None"
+        android:autofillHints=""
         android:hint="Time"
         android:inputType="time"
         android:minHeight="50dp"
-        android:textColor="@color/black"
-
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
 
     <TextView
-        android:layout_width="46dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/day"
         android:textSize="20sp"
         android:textStyle="bold"
-        />
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/dayEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="Day"
-        android:importantForAutofill="no"
         android:inputType="date"
         android:minHeight="50dp"
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:layout_width="46dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/date"
         android:textSize="20sp"
         android:textStyle="bold"
-
-        />
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/dateEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="Date"
-        android:importantForAutofill="no"
         android:inputType="date"
         android:minHeight="48dp"
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+        android:textColor="@android:color/black"
+        android:textColorHint="#546E7A"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -109,30 +111,26 @@
         android:text="@string/email"
         android:textStyle="bold"
         android:textSize="20sp"
-
-    />
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="Email"
-        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColor="#000000"
+        android:textColor="@android:color/black"
         android:textColorHint="#808080"
         android:visibility="visible"
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="114dp"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:ignore="HardcodedText"
-        android:textStyle="bold"
-        />
-
+        android:text="@string/submit"
+        android:textStyle="bold" />
 
 </LinearLayout>

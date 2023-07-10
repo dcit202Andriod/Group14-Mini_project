@@ -1,5 +1,6 @@
 package com.example.clinics.ui.appointment;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,11 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.clinics.R;
+
+import java.text.DateFormat;
+import java.util.Calendar;
 
 public class AppointmentFragment extends Fragment {
 
@@ -29,15 +34,18 @@ public class AppointmentFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_appointment, container, false);
 
         // Initialize the UI components
-        doctorNameEditText = view.findViewById(R.id.doctorNameEditText);
+        doctorNameEditText = view.findViewById(R.id.patient_name);
         timeEditText = view.findViewById(R.id.timeEditText);
         dayEditText = view.findViewById(R.id.dayEditText);
         emailEditText = view.findViewById(R.id.emailEditText);
         Button submitButton = view.findViewById(R.id.submitButton);
+
+        // Set an OnClickListener on the dayEditText to show the DatePickerDialog
+        dayEditText.setOnClickListener(v -> showDatePicker());
 
         submitButton.setOnClickListener(v -> {
             // Retrieve the input values
@@ -49,22 +57,41 @@ public class AppointmentFragment extends Fragment {
             // Pass the data to the ViewModel
             appointmentViewModel.submitAppointment(doctorName, time, day, email);
 
-            if (doctorNameEditText.getText().toString().equals("") ||
-                    timeEditText.getText().toString().equals("") ||
-                    dayEditText.getText().toString().equals("") ||
-                    emailEditText.getText().toString().equals("")) {
-
-                Toast.makeText(getActivity().getApplicationContext(), "All fields are required!!", Toast.LENGTH_SHORT).show();
+            if (doctorName.isEmpty() || time.isEmpty() || day.isEmpty() || email.isEmpty()) {
+                Toast.makeText(requireContext(), "All fields are required!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getActivity().getApplicationContext(), "Appointment submitted successfully", Toast.LENGTH_SHORT).show();
-                doctorNameEditText.setText("");
-                timeEditText.setText("");
-                dayEditText.setText("");
-                emailEditText.setText("");
+                Toast.makeText(requireContext(), "Appointment submitted successfully", Toast.LENGTH_SHORT).show();
+                clearForm();
             }
-
         });
 
         return view;
+    }
+
+    private void showDatePicker() {
+        // Get the current date
+        final Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        // Create a DatePickerDialog
+        DatePickerDialog datePickerDialog = new DatePickerDialog(requireContext(), (view, year1, month1, dayOfMonth) -> {
+            // Update the dayEditText with the selected date
+            calendar.set(year1, month1, dayOfMonth);
+            DateFormat dateFormat = DateFormat.getDateInstance();
+            String selectedDate = dateFormat.format(calendar.getTime());
+            dayEditText.setText(selectedDate);
+        }, year, month, day);
+
+        // Show the DatePickerDialog
+        datePickerDialog.show();
+    }
+
+    private void clearForm() {
+        doctorNameEditText.setText("");
+        timeEditText.setText("");
+        dayEditText.setText("");
+        emailEditText.setText("");
     }
 }
