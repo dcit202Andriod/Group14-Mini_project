@@ -100,5 +100,6 @@ public class AppointmentFragment extends Fragment {
         timeEditText.setText("");
         dateEditText.setText("");
         emailEditText.setText("");
+        phoneNumber.setText("");
     }
 }
