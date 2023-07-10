@@ -28,8 +28,8 @@
     <string name="patient_name">Patient Name</string>
     <string name="select_doctor">Select Doctor</string>
     <string name="doctor_name_hint">Enter doctor\'s name</string>
-    <string name="time">Time:</string>
-    <string name="email">Email:</string>
+    <string name="time">Time</string>
+    <string name="email">Email</string>
     <string name="date">Date</string>
     <string name="thank_you_for_choosing_clinics">Thank you for choosing Clinics!</string>
     <string name="send_email">Send Email</string>
