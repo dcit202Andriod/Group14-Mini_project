@@ -4,4 +4,5 @@
     <item name="backgroundWebView" type="id" />
     <item name="doctorNameEditText" type="id" />
     <item name="text_achievements" type="id" />
+    <item name="phoneNumberText" type="id" />
 </resources>
