@@ -79,20 +79,14 @@
     ]]>
 </string>
 
-    <string name="all_aims">
-    <![CDATA[
-        Aim:
-        • To deliver exceptional and compassionate healthcare services to every patient.
-        • To continuously improve patient outcomes through evidence-based practices.
-        • To foster a supportive and inclusive environment for staff, patients, and families.
-        • To actively engage with the community and promote health and wellness.
-        • To be a leader in healthcare innovation and research.
-        • To ensure patient safety and provide a comfortable healing environment.
-    ]]>
-</string>
 
-
-
+        <string name="all_aims">All Aims</string>
+<string name="aim1">To deliver exceptional and compassionate healthcare services to every patient.</string>
+<string name="aim2">To continuously improve patient outcomes through evidence-based practices.</string>
+<string name="aim3">To foster a supportive and inclusive environment for staff, patients, and families.</string>
+<string name="aim4">To actively engage with the community and promote health and wellness.</string>
+<string name="aim5">To be a leader in healthcare innovation and research.</string>
+<string name="aim6">To ensure patient safety and provide a comfortable healing environment.</string>
 
 
 
