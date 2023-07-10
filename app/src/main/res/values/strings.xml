@@ -83,5 +83,12 @@
 // Services
     <string name="emergency_care">Emergency Care</string>
     <string name="inpatient_care">Inpatient Care</string>
-
+    <string name="outpatient_care">Outpatient Care</string>
+    <string name="surgery">Surgery</string>
+    <string name="diagnostic_service">Diagnostic Services</string>
+    <string name="maternity">Maternity and Neonatal Care</string>
+    <string name="rehabilitation">Rehabilitation Services</string>
+    <string name="mental_health">Mental Health Services</string>
+    <string name="specialized_services">Specialized Medical Services</string>
+    <string name="pharmacy_service">Pharmacy Services</string>
 </resources>

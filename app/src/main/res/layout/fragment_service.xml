@@ -103,7 +103,7 @@
                     android:id="@+id/outpatientServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Outpatient Care"
+                    android:text="@string/outpatient_care"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
@@ -128,7 +128,7 @@
                     android:id="@+id/surgeryServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Surgery"
+                    android:text="@string/surgery"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
@@ -160,7 +160,7 @@
                     android:id="@+id/diagnosticServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diagnostic Services"
+                    android:text="@string/diagnostic_service"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
@@ -185,7 +185,7 @@
                     android:id="@+id/maternityServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Maternity and Neonatal Care"
+                    android:text="@string/maternity"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginLeft="4dp"
@@ -219,7 +219,7 @@
                     android:id="@+id/rehabilitationServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rehabilitation Services"
+                    android:text="@string/rehabilitation"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
@@ -244,7 +244,7 @@
                     android:id="@+id/mentalHealthServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mental Health Services"
+                    android:text="@string/mental_health"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
@@ -276,7 +276,7 @@
                     android:id="@+id/specializedServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Specialized Medical Services"
+                    android:text="@string/specialized_services"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
@@ -301,7 +301,7 @@
                     android:id="@+id/pharmacyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pharmacy Services"
+                    android:text="@string/pharmacy_service"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:layout_marginTop="8dp"/>
