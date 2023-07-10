@@ -19,7 +19,8 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 - [x] Appointment Booking
 - [x] Toast Message Display for successful booking and errors
 - [x] Slide left to display menu
-
+- [x] Displaying a list of available doctors
+      
 ## Team Roles
 ````
 Usernames              |            Role
