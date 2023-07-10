@@ -48,6 +48,7 @@
         <item>Dr. Robert Wilson</item>
     </string-array>
 
+    <string name="achievement_main">Achievements</string>
     <string name="all_achievements">
     <![CDATA[
         • Award-Winning Patient Safety Initiatives
@@ -58,18 +59,9 @@
         • Commitment to Medical Education and Training
     ]]>
 </string>
-
-    <string name="achievements_and_goals">
+    <string name="goal_main">Goals</string>
+    <string name="all_goals">
     <![CDATA[
-        Achievements:
-        • Award-Winning Patient Safety Initiatives
-        • Leaders in Minimally Invasive Surgeries
-        • Excellence in Emergency Care
-        • Pioneers in Telemedicine Services
-        • Recognized for Exceptional Maternity Care
-        • Commitment to Medical Education and Training
-
-        Goals:
         • Provide patient-centered care with a focus on improving health outcomes.
         • Expand access to healthcare services and reach underserved communities.
         • Foster a culture of continuous learning and professional development for our staff.
