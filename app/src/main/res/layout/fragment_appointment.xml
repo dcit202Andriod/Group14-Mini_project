@@ -59,7 +59,7 @@
         android:id="@+id/timeEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/spinner_items"
+        android:entries="@array/available_times"
         android:padding="15dp"
         android:layout_marginBottom="8dp"
         android:textColor="@android:color/black" />
