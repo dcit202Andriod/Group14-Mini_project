@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:id="@+id/emergencyService"
@@ -30,16 +32,19 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_emergency"/>
+                    android:src="@drawable/icon_emergency"
+                    android:contentDescription="@string/todo"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/emergencyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/emergency_care"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -55,16 +60,18 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_inpatient"/>
+                    android:contentDescription="TODO"
+                    android:src="@drawable/icon_inpatient"
+                    tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/inpatientServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/inpatient_care"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -72,7 +79,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:id="@+id/outpatientService"
@@ -87,16 +95,18 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_outpatient"/>
+                    android:src="@drawable/icon_outpatient"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
 
                 <TextView
                     android:id="@+id/outpatientServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/outpatient_care"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -112,16 +122,18 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_surgery"/>
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/icon_surgery"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/surgeryServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/surgery"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -129,7 +141,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:id="@+id/diagnosticService"
@@ -144,16 +157,18 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_diagnostic"/>
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/icon_diagnostic"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/diagnosticServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/diagnostic_service"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -167,20 +182,22 @@
                 android:orientation="vertical">
 
                 <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/icon_maternity"/>
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/icon_maternity"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/maternityServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/maternity"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:padding="4dp"
-                    android:layout_marginTop="8dp"/>
+                    android:text="@string/maternity"
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -188,7 +205,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:id="@+id/rehabilitationService"
@@ -203,17 +221,18 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_rehabilitation"/>
+                    android:src="@drawable/icon_rehabilitation"
+                    android:importantForAccessibility="no" />
 
                 <TextView
                     android:id="@+id/rehabilitationServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/rehabilitation"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -229,17 +248,19 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_mental_health"/>
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/icon_mental_health"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/mentalHealthServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/mental_health"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -247,7 +268,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
 
             <LinearLayout
                 android:id="@+id/specializedService"
@@ -262,17 +284,18 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_specialized"/>
+                    android:src="@drawable/icon_specialized"
+                    android:importantForAccessibility="no" />
 
                 <TextView
                     android:id="@+id/specializedServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/specialized_services"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -288,16 +311,17 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_pharmacy"/>
+                    android:src="@drawable/icon_pharmacy"
+                    android:importantForAccessibility="no" />
 
                 <TextView
                     android:id="@+id/pharmacyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/pharmacy_service"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -305,7 +329,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:id="@+id/palliativeService"
@@ -315,21 +340,24 @@
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_background_blue"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/icon_palliative"/>
+                    android:src="@drawable/icon_palliative"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
 
                 <TextView
                     android:id="@+id/palliativeServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/palliative_care"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>

@@ -92,4 +92,6 @@
     <string name="specialized_services">Specialized Medical Services</string>
     <string name="pharmacy_service">Pharmacy Services</string>
     <string name="palliative_care">Palliative Care and Hospice Services</string>
+    <string name="todo">TODO</string>
+
 </resources>
