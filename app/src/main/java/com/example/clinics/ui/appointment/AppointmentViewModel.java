@@ -22,4 +22,5 @@ public class AppointmentViewModel extends ViewModel {
 
         // Perform any other actions as needed (e.g., saving to a database, making API requests, etc.)
     }
+
 }
