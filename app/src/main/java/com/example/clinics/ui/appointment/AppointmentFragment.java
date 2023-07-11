@@ -27,19 +27,17 @@ import java.util.List;
 public class AppointmentFragment extends Fragment {
 
     private EditText doctorNameEditText;
-    private Spinner timeEditText;
+    private EditText timeEditText;
     private EditText dateEditText;
     private EditText emailEditText;
     private EditText phoneNumber;
     private EditText patientName;
     private AppointmentViewModel appointmentViewModel;
-    private List<String> availableTimes;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         appointmentViewModel = new ViewModelProvider(this).get(AppointmentViewModel.class);
-        availableTimes = createAvailableTimes(); // Initialize the list of available times
     }
 
     @SuppressLint("CutPasteId")
@@ -57,9 +55,9 @@ public class AppointmentFragment extends Fragment {
         Button submitButton = view.findViewById(R.id.submitButton);
 
         // Create an ArrayAdapter for the available times and set it to the timeEditText
-        ArrayAdapter<String> timeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, availableTimes);
-        timeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        timeEditText.setAdapter(timeAdapter);
+//        ArrayAdapter<String> timeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, availableTimes);
+//        timeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        timeEditText.setAdapter(timeAdapter);
 
         // Set an OnClickListener on the dateEditText to show the DatePickerDialog
         dateEditText.setOnClickListener(v -> showDatePicker());
@@ -67,7 +65,7 @@ public class AppointmentFragment extends Fragment {
         submitButton.setOnClickListener(v -> {
             // Retrieve the input values
             String doctorName = doctorNameEditText.getText().toString();
-            String time = timeEditText.getSelectedItem().toString();
+            String time = timeEditText.getText().toString();
             String date = dateEditText.getText().toString();
             String email = emailEditText.getText().toString();
             String phone = phoneNumber.getText().toString();
@@ -107,19 +105,19 @@ public class AppointmentFragment extends Fragment {
         datePickerDialog.show();
     }
 
-    private List<String> createAvailableTimes() {
-        // Create a list of available times
-        List<String> times = new ArrayList<>();
-        times.add("09:00 AM");
-        times.add("10:00 AM");
-        times.add("11:00 AM");
-        // Add more available time options as needed
-        return times;
-    }
+//    private List<String> createAvailableTimes() {
+//        // Create a list of available times
+//        List<String> times = new ArrayList<>();
+//        times.add("09:00 AM");
+//        times.add("10:00 AM");
+//        times.add("11:00 AM");
+//        // Add more available time options as needed
+//        return times;
+//    }
 
     private void clearForm() {
         doctorNameEditText.setText("");
-        timeEditText.setSelection(0);
+        timeEditText.setText("");
         dateEditText.setText("");
         emailEditText.setText("");
         phoneNumber.setText("");
