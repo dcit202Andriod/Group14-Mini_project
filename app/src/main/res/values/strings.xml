@@ -48,6 +48,13 @@
         <item>Dr. Robert Wilson</item>
     </string-array>
 
+    <string-array name="available_times">
+        <item>9am - 12pm</item>
+        <item>1pm - 4pm</item>
+        <item>5pm - 8pm</item>
+        <item>9pm - 11pm</item>
+    </string-array>
+
     <string name="achievement_main">Achievements</string>
     <string name="all_achievements">
     <![CDATA[
