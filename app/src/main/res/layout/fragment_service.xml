@@ -122,8 +122,9 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="48dp"
+                    android:importantForAccessibility="no"
                     android:src="@drawable/icon_surgery"
-                    android:importantForAccessibility="no" />
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/surgeryServiceText"
@@ -181,10 +182,11 @@
                 android:orientation="vertical">
 
                 <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/icon_maternity"
-                    android:importantForAccessibility="no" />
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/icon_maternity"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/maternityServiceText"
@@ -227,10 +229,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/rehabilitation"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -255,10 +257,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/mental_health"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -290,10 +292,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/specialized_services"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -316,10 +318,10 @@
                     android:id="@+id/pharmacyServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/pharmacy_service"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -352,10 +354,10 @@
                     android:id="@+id/palliativeServiceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/palliative_care"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
