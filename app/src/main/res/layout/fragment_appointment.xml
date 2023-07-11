@@ -55,17 +55,14 @@
         android:textStyle="bold"
         android:textColor="@android:color/black" />
 
-    <EditText
+    <Spinner
         android:id="@+id/timeEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="Time"
-        android:inputType="time"
-        android:minHeight="50dp"
-        android:textColor="@android:color/black"
-        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck,DuplicateSpeakableTextCheck" />
-
+        android:entries="@array/spinner_items"
+        android:padding="15dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:layout_width="wrap_content"
