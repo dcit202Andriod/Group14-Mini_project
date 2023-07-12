@@ -24,8 +24,8 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 ````
 Usernames              |            Role
 _______________________|_________________________
-ayyesu                 |
-Bright312              |
+ayyesu                 | Services Activities and project modification
+Bright312              | Appointment Activities
 FelixAshong            |
 sfodofe                | Project Documentation
 Martin-Amoah           |
