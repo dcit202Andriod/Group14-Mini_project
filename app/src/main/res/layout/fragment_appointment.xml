@@ -8,7 +8,7 @@
     android:paddingBottom="12dp"
     tools:context=".ui.appointment.AppointmentFragment"
     android:background="@drawable/doctor_appointment"
-    android:layout_centerVertical="true">
+   >
 
     <TextView
         android:layout_width="wrap_content"

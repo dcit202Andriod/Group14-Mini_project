@@ -1,6 +1,5 @@
 package com.example.clinics.ui.appointment;
 
-import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -20,9 +18,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.clinics.R;
 
 import java.text.DateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
 
 public class AppointmentFragment extends Fragment {
 
@@ -32,6 +28,8 @@ public class AppointmentFragment extends Fragment {
     private EditText emailEditText;
     private EditText phoneNumber;
     private EditText patientName;
+    private Spinner spinner1;
+    private Spinner spinner2;
     private AppointmentViewModel appointmentViewModel;
 
     @Override
@@ -40,10 +38,35 @@ public class AppointmentFragment extends Fragment {
         appointmentViewModel = new ViewModelProvider(this).get(AppointmentViewModel.class);
     }
 
-    @SuppressLint("CutPasteId")
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_appointment, container, false);
+
+        // Initialize the UI components
+        spinner1 = view.findViewById(R.id.spinner);
+
+        // Create an ArrayAdapter using a string array resource and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(requireContext(),
+                R.array.spinner_items, android.R.layout.simple_spinner_item);
+
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // Apply the adapter to the spinner
+        spinner1.setAdapter(adapter);
+
+        // Initialize the UI components
+        spinner2 = view.findViewById(R.id.timeEditText);
+
+        // Create an ArrayAdapter using a string array resource and a default spinner layout
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(requireContext(),
+                R.array.available_times, android.R.layout.simple_spinner_item);
+
+        // Specify the layout to use when the list of choices appears
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // Apply the adapter to the spinner
+        spinner2.setAdapter(adapter1);
 
         // Initialize the UI components
         doctorNameEditText = view.findViewById(R.id.patient_name);
@@ -53,11 +76,6 @@ public class AppointmentFragment extends Fragment {
         dateEditText = view.findViewById(R.id.dateEditText);
         patientName = view.findViewById(R.id.patient_name);
         Button submitButton = view.findViewById(R.id.submitButton);
-
-        // Create an ArrayAdapter for the available times and set it to the timeEditText
-//        ArrayAdapter<String> timeAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, availableTimes);
-//        timeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        timeEditText.setAdapter(timeAdapter);
 
         // Set an OnClickListener on the dateEditText to show the DatePickerDialog
         dateEditText.setOnClickListener(v -> showDatePicker());
@@ -93,7 +111,7 @@ public class AppointmentFragment extends Fragment {
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
         // Create a DatePickerDialog
-        DatePickerDialog datePickerDialog = new DatePickerDialog(requireContext(), (view, year1, month1, dayOfMonth) -> {
+        DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), (view, year1, month1, dayOfMonth) -> {
             // Update the dateEditText with the selected date
             calendar.set(year1, month1, dayOfMonth);
             DateFormat dateFormat = DateFormat.getDateInstance();
@@ -104,16 +122,6 @@ public class AppointmentFragment extends Fragment {
         // Show the DatePickerDialog
         datePickerDialog.show();
     }
-
-//    private List<String> createAvailableTimes() {
-//        // Create a list of available times
-//        List<String> times = new ArrayList<>();
-//        times.add("09:00 AM");
-//        times.add("10:00 AM");
-//        times.add("11:00 AM");
-//        // Add more available time options as needed
-//        return times;
-//    }
 
     private void clearForm() {
         doctorNameEditText.setText("");
