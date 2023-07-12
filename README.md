@@ -26,12 +26,12 @@ Usernames              |            Role
 _______________________|_________________________
 ayyesu                 | Services Activities and project modification
 Bright312              | Appointment Activities
-FelixAshong            |
+FelixAshong            | Project Platform and Review
 sfodofe                | Project Documentation
-Martin-Amoah           |
-underagee              |
+Martin-Amoah           | Home Activity
+underagee              | Code Inspection
 Ameyyaw                | Project Documentation
-StanleyHinson          |
+StanleyHinson          |  Project Documentation
 Kveonn                 |
 vintageparasite        | Project Documentation
 ````
