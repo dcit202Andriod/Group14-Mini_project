@@ -14,7 +14,6 @@ The Clinics provides a user-friendly interface, allowing users to navigate effor
 With Clinics, users can take control of their healthcare needs by easily booking appointments and accessing emergency services whenever necessary.
 It serves as a reliable companion for individuals seeking efficient and accessible healthcare services right at their fingertips.
 
-
 ## Features 🔧🔗
 - [x] Appointment Booking
 - [x] Toast Message Display for successful booking and errors
