@@ -32,7 +32,7 @@ Martin-Amoah           | Home Activity
 underagee              | Code Inspection
 Ameyyaw                | Project Documentation
 StanleyHinson          |  Project Documentation
-Kveonn                 |
+Kveonn                 | Pr
 vintageparasite        | Project Documentation
 ````
 ### Team 👨‍👧‍👦
