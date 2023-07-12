@@ -25,14 +25,14 @@ It serves as a reliable companion for individuals seeking efficient and accessib
 Usernames              |            Role
 _______________________|_________________________
 ayyesu                 | Services Activities and project modification
-Bright312              | Appointment Activities
+Bright312              | Appointment and Doctor Activities
 FelixAshong            | Project Platform and Review
 sfodofe                | Project Documentation
 Martin-Amoah           | Home Activity
-underagee              | Code Inspection
+underagee              | Code Inspector
 Ameyyaw                | Project Documentation
-StanleyHinson          |  Project Documentation
-Kveonn                 | Pr
+StanleyHinson          | Project Documentation
+Kveonn                 | Contact Activity
 vintageparasite        | Project Documentation
 ````
 ### Team 👨‍👧‍👦
